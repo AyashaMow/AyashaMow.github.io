@@ -3,271 +3,666 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-  
-    <title>Ayasha Akter Mow | Portfolio</title>
+    <title>Ayasha Akter Mow Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/skins/color-1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!--Style Switcher-->
+    <link rel="stylesheet" href="css/skins/color-1.css" class="alternate-style" title="color-1" disabled>
+    <link rel="stylesheet" href="css/skins/color-2.css" class="alternate-style" title="color-2" disabled>
+    <link rel="stylesheet" href="css/skins/color-3.css" class="alternate-style" title="color-3" disabled>
+    <link rel="stylesheet" href="css/skins/color-4.css" class="alternate-style" title="color-4" disabled>
+    <link rel="stylesheet" href="css/skins/color-5.css" class="alternate-style" title="color-5" disabled>
+    <link rel="stylesheet" href="css/style-switcher.css">
 </head>
 <body>
 
-    <!--Header Design-->
-    <header class="header">
-        <a href="#" class="logo">Portfolio.</a>
-
-        <i class="fa-solid fa-bars" id="menu-icon"></i>
-
-        <nav class="navbar">
-            <a href="Home.html" class="active">Home</a>
-            <a href="#about">About</a>
-            <a href="#education">Education</a>
-            <a href="#skills">Skills</a>
-            <a href="#services">Services</a>
-            
-            <a href="#contactme">Contact Me</a>
-        </nav>
-    </header>
-
-    <!--Home Section Design-->
-    <section class="home" id="home">
-        <div class="home-content">
-            <h3>Hi, Myself</h3>
-            <h1>Ayasha Akter Mow</h1>
-            <h3>And I am a <span>Frontend Developer</span></h3>
-                <p>Energetic Front-end Developer with 1 years+ of experience in creating and maintaining functional, attractive, and responsive websites for companies.</p>
-                <div id="hiddenContent" style="display: none;">
-                    <p> I have a clear understanding of modern technologies and design practices with JavaScript, PHP and Laravel. I also have experience in API integration. Also, I have a clear understanding of SQL. I have completed my 3rd year project through java application. So, Basically, I am very good in JAVA.</p>
-                </div>
-                <p id="readMoreLink" style="cursor: pointer; color: rgb(10, 10, 231);">Read More</p>
-
-            <div class="social-media">
-                <a href="https://www.linkedin.com/in/ayasha-akter-mow-b35847212/"><i class="fab fa-linkedin"></i></a>
-                <a href="https://www.facebook.com/ayashaaktermou.mou/"><i class="fab fa-facebook"></i></a>
-                <a href="https://instagram.com/ayashaaktermou"><i class="fab fa-instagram"></i></a>
+    <!--Main Container Starts -->
+    <div class="main-container">
+        <!--Aside Starts-->
+        <div class="aside">
+            <div class="logo">
+                <a href="#"><span>Aya</span>sha</a>
             </div>
-
-            <button id="downloadBtn">Download CV</button>
+            <div class="nav-toggler">
+                <span></span>
+            </div>
+            <ul class="nav">
+                <li><a href="#home" class="active"><i class="fa fa-home"></i>Home</a></li>
+                <li><a href="#about"><i class="fa fa-user"></i> About</a></li>
+                <li><a href="#service"><i class="fa fa-list"></i> Services</a></li>
+                <li><a href="#portfolio"><i class="fa fa-briefcase"></i> Portfolio</a></li>
+                <li><a href="#contact"><i class="fa fa-comments"></i>Contact</a></li>
+            </ul>
         </div>
+        <!--Aside Ends-->
 
-
-        <div class="home-img">
-            <img src="mou.jpg" alt="">
-        </div>
-    </section>
-
-    <!--ABOUT Section Design-->
-
-     <section class="about" id="about">
-        <div class="about-img">
-            <img src="mou.jpg" alt="">
-        </div>
-
-        <div class="about-content">
-            <h2 class="heading">ABOUT <span>Me</span></h2>
-            
-            <p>I am very dedicated to my work, always willing to help others, 
-                and I ensure that I complete my tasks with utmost care. Occasionally, 
-                I encounter challenges during projects, and during those times, 
-                I rely on my team members for support. I believe 
-                that university education is not necessarily a prerequisite 
-                for jobs in the tech field.
-                <br><br>
-                Recently, I have begun my research on depression because it's evident 
-                in our society that many individuals are grappling with it and overcoming
-                 the challenges it presents in their lives. I anticipate discovering numerous 
-                novel insights to incorporate into my research paper. My paper focuses on deep learning.</p>
-            
-        </div>
-     </section>
-
-     <!--Education Design-->
-     <section class="education" id="education">
-        <h2 class="heading">My<span>Education</span></h2>
-
-        <div class="grid-container">
-            <div class="grid-item">DEGREE</div>
-            <div class="grid-item">SUBJECT</div>
-            <div class="grid-item">INSTITUTION</div>
-            <div class="grid-item">CGPA</div>
-            <div class="grid-item">ACTIVE YEAR</div>
-            <div class="grid-item">BSc(Eng.)</div>
-            <div class="grid-item">Computer Science & Engineering</div>
-            <div class="grid-item">Leading University</div>
-            <div class="grid-item">3.60 out of 4.00</div>
-            <div class="grid-item">2019-2023</div>
-            <div class="grid-item">HSC</div>
-            <div class="grid-item">Science</div>
-            <div class="grid-item">Shaheed Bir Uttam Lt. Anwar Girl's College</div>
-            <div class="grid-item">5.00 out of 5.00</div>
-            <div class="grid-item">2015-2017</div>
-            <div class="grid-item">SSC</div>
-            <div class="grid-item">Science</div>
-            <div class="grid-item">Mirpur Shiddhanta High School</div>
-            <div class="grid-item">5.00(Golden) out of 5.00</div>
-            <div class="grid-item">2013-2015</div>
-            <div class="grid-item">JSC</div>
-            <div class="grid-item">Scholarship</div>
-            <div class="grid-item">Mirpur Shiddhanta High School</div>
-            <div class="grid-item">5.00 out of 5.00(talentful scholarship)</div>
-            <div class="grid-item">2013</div>
-
-            <div class="grid-item">PSC</div>
-            <div class="grid-item">Scholarship</div>
-            <div class="grid-item">Dolphin Kinder Garden School</div>
-            <div class="grid-item">First Division(talentful scholarship)</div>
-            <div class="grid-item">2010</div>
-        </div>
-
-     </section>
-
-     <section class="skills" id="skills">
-        <h2 class="heading">My<span>Skills</span></h2>
-            <div class="row">
-            <section class="col">
-                <div class="sub-title">
-                    <h2>Programming skills</h2>
+        <!--Main Content Starts-->
+        <div class="main-content">
+            <!--Home Section Start-->
+            <section class="home section" id="home">
+                <div class="container">
+                    <div class="row">
+                <div class="home-info padd-15">
+                    <h3 class="hello">Hello, My Name is <span class="name">Ayasha Akter Mow</span></h3>
+                    <h3 class="my-profession">I'm a <span class="typing">Web Developer</span></h3>
+                    <p>I'm a Web Developer with extensive experience for over 1 years. My expertise
+                        is to create and develop ideas, website design, and many more...
+                    </p>
+                    <a href="#contact" class="btn hire-me">Hire Me</a>
                 </div>
-                <div class="sills-container">
-                    <div class="skill">
-                        <div class="subject">HTML</div>
-                        <div class="progress-bar" value="93%">
-                            <div class="progress-line" style="max-width: 93%;"></div>
+            
+                <div class="home-img padd-15">
+                    <img src="images/ayasha.jpg" alt="">
+                </div>
+               </div>
+              </div>
+            </section>
+            <!--Home Section End-->
+
+             <!--About Section Start-->
+             <section class="about section " id="about">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2 style="top: 60px; margin-bottom: 50px;">About Me</h2>
                         </div>
                     </div>
-    
-                    <div class="skill">
-                        <div class="subject">JavaScript</div>
-                        <div class="progress-bar" value="84%">
-                            <div class="progress-line" style="max-width: 84%;"></div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <div class="subject">PHP</div>
-                        <div class="progress-bar" value="65%">
-                            <div class="progress-line" style="max-width: 65%;"></div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <div class="subject">Laravel</div>
-                        <div class="progress-bar" value="34%">
-                            <div class="progress-line" style="max-width: 34%;"></div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <div class="subject">Python</div>
-                        <div class="progress-bar" value="24%">
-                            <div class="progress-line" style="max-width: 24%;"></div>
+                    <div class="row">
+                        <div class="about-content padd-15">
+                            <div class="row">
+                                <div class="about-text padd-15">
+                                    <h3>I'm Ayasha Akter Mow and <span>Web Developer</span></h3>
+                                    <p>I am a highly skilled Full-Stack Developer and Software Engineer with a strong background in web and software development. With expertise in multiple technologies, I have successfully developed 5 to 7 modules for 7 to 8 software companies, contributing to innovative and scalable solutions. My experience spans across both front-end and back-end development, ensuring seamless integration and high-performance applications. Passionate about problem-solving 
+                                        and technology, I continuously strive to enhance user experience and software efficiency.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="personal-info padd-15">
+                                  <div class="row">
+                                    <div class="info-item padd-15">
+                                        <p><span>Birthday : 25 November 2000</span></p>
+                                    </div>
+                                    <div class="info-item padd-15">
+                                        <p><span>Age : 25</span></p>
+                                    </div>
+                                    <div class="info-item padd-15">
+                                        <p><span>Email : ayashaaktermow2268@gmail.com</span></p>
+                                    </div>
+                                    <div class="info-item padd-15">
+                                        <p><span>Website: www.domain.com</span></p>
+                                    </div>
+                                    <div class="info-item padd-15">
+                                        <p><span>Degree : CSE</span></p>
+                                    </div>
+                                    <div class="info-item padd-15">
+                                        <p><span>Phone : 01535236956</span></p>
+                                    </div>
+                                    <div class="info-item padd-15">
+                                        <p><span>City : Mirpur-1, Dhaka-1216</span></p>
+                                    </div>
+                                    <div class="info-item padd-15">
+                                        <p><span>Religion : Islam</span></p>
+                                    </div>
+                                  </div>
+                                  <div class="row">
+                                    <div class="buttons padd-15">
+                                        <a href="#" class="btn">Download CV</a>
+                                        <a href="#contact" class="btn hire-me">Hire me</a>
+                                    </div>
+                                  </div>  
+                                </div>
+                                <div class="skills padd-15">
+                                    <div class="row">
+                                        <div class="skill-item padd-15">
+                                            <h5>HTML</h5>
+                                            <div class="progress">
+                                                <div class="progress-in" style="width:95%;">
+                                                </div>
+                                                <div class="skill-percent">95%</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="skill-item padd-15">
+                                            <h5>CSS</h5>
+                                            <div class="progress">
+                                                <div class="progress-in" style="width:83%;">
+                                                </div>
+                                                <div class="skill-percent">83%</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="skill-item padd-15">
+                                            <h5>Bootstrap</h5>
+                                            <div class="progress">
+                                                <div class="progress-in" style="width:80%;">
+                                                </div>
+                                                <div class="skill-percent">80%</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="skill-item padd-15">
+                                            <h5>PHP</h5>
+                                            <div class="progress">
+                                                <div class="progress-in" style="width:73%;">
+                                                </div>
+                                                <div class="skill-percent">73%</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="skill-item padd-15">
+                                            <h5>Codeignitor3</h5>
+                                            <div class="progress">
+                                                <div class="progress-in" style="width:70%;">
+                                                </div>
+                                                <div class="skill-percent">70%</div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="skill-item padd-15">
+                                                <h5>JS</h5>
+                                                <div class="progress">
+                                                    <div class="progress-in" style="width:55%;">
+                                                    </div>
+                                                    <div class="skill-percent">55%</div>
+                                                </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                            </div>
+
+                            <div class="row">
+                                <div class="education padd-15">
+                                    <h3 class="title">Education</h3><br>
+                                    <div class="row">
+                                        <div class="timeline-box padd-15">
+                                            <div class="timeline shadow-dark">
+                                                <!--timeline item-->
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i>
+                                                        2019-2023
+                                                    </h3>
+                                                    <h4 class="timeline-title">BSc in Computer Science 
+                                                        & Engineering
+                                                    </h4>
+                                                    <p class="timeline-text">Leading University, Sylhet</p>
+                                                    <h5 class="timeline-title">CGPA: 3.52 out of 4.00
+                                                    </h5>
+                                                </div>
+                                            
+                                                <!--timeline item-->
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i>
+                                                        2015-2017
+                                                    </h3>
+                                                    <h4 class="timeline-title">HSC
+                                                    </h4>
+                                                    <p class="timeline-text">Shaheed Bir
+                                                        Uttam Lt. Anwar Girl's School & College, Mirpur 
+                                                    Cantonment, Dhaka</p>
+                                                    <h5 class="timeline-title">GPA: 5.00 out of 5.00
+                                                    </h5>
+
+                                                </div>
+                                            
+                                                <!--timeline item-->
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i>
+                                                        2013-2015
+                                                    </h3>
+                                                    <h4 class="timeline-title">SSC
+                                                    </h4>
+                                                    <p class="timeline-text">Mirpur Shidhanto 
+                                                        High School, Mirpur -1
+                                                    , Dhaka-1216</p>
+                                                    <h5 class="timeline-title">GPA: 5.00 (Golden) out of 5.00
+                                                    </h5>
+                                                </div>
+                                            
+                                                <!--timeline item-->
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i>
+                                                        2012
+                                                    </h3>
+                                                    <h4 class="timeline-title">JSC
+                                                    </h4>
+                                                    <p class="timeline-text">Mirpur Shidhanto 
+                                                        High School, Mirpur -1
+                                                    , Dhaka-1216</p>
+                                                    <h5 class="timeline-title">GPA: 5.00 (Golden) out of 5.00
+                                                    </h5>
+                                                    <h5 class="timeline-title">Scholarship : TalentPhool
+                                                    </h5>
+                                                </div>
+                                            
+                                            
+                                                <!--timeline item-->
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i>
+                                                        2009
+                                                    </h3>
+                                                    <h4 class="timeline-title">PSC
+                                                    </h4>
+                                                    <p class="timeline-text">Bolorampur High School</p>
+                                                    <h5 class="timeline-title">GPA: 5.00 out of 5.00
+                                                    </h5>
+                                                    <h5 class="timeline-title">Scholarship : TalentPhool
+                                                    </h5>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="experience padd-15">
+                                    <h3 class="title">Experience</h3><br>
+                                    <div class="row">
+                                        <div class="timeline-box padd-15">
+                                            <div class="timeline shadow-dark">
+                                                <!--timeline item-->
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i>
+                                                        May 2024- February 2025
+                                                    </h3>
+                                                    <h4 class="timeline-title">Inflame Solutions Ltd., Gulshan-2, Dhaka-1212
+                                                    </h4>
+                                                    <h5 class="timeline-designation"> Junior Software Engineer</h5><br>
+                                                    <p class="timeline-text">
+                                                        I solved many functional problems, built new modules for clients, and customized them as per their requirements.
+                                                            I interacted with customers to understand their needs and converted them into software users. Then, after delivering the software, the client requested some changes and asked for 
+                                                            new reports for their software. I created those reports based on the client's needs.
+                                                            While ads were running, I communicated with clients through WhatsApp. Then, I went there with the technical team, 
+                                                            conducted a meeting with the clients, and personally converted three clients into software users. Then, I developed
+                                                            Software for client's.
+                                                    </p>
+                                                    
+                                                    
+                                                </div>
+                                            
+                                                <!--timeline item-->
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i>
+                                                        Nov 2023 – May 2024 
+                                                    </h3>
+                                                    <h4 class="timeline-title">PyCoders Tech, Remote, Bangladesh
+                                                    </h4>
+                                                    <h5 class="timeline-designation"> Intern Front End Developer  </h5><br>
+                                                    <p class="timeline-text">
+                                                        Responsible for designing and developing products and client projects.
+                                                        Working with JavaScript & PHP.
+                                                        Working with HTML, CSS, and Bootstrap.
+                                                        Developing and integrating APIs to enhance functionality.
+                                                        Optimizing website performance and ensuring cross-browser compatibility.
+                                                    </p>
+                                                    
+                                                    
+                                                </div>
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i>
+                                                         
+                                                    Sep 2022 – Jun 2023 
+                                                    </h3>
+                                                    <h4 class="timeline-title">AppifyLab, Sylhet, Bangladesh
+                                                    </h4>
+                                                    <h5 class="timeline-designation"> Intern Front End Developer  </h5><br>
+                                                    <p class="timeline-text">
+                                                        Responsible for designing and developing products and client projects.
+                                                        Working with JavaScript & PHP.
+                                                        Working with HTML, CSS, and Bootstrap.
+                                                        Developing and integrating APIs to enhance functionality.
+                                                        Optimizing website performance and ensuring cross-browser compatibility.
+                                                    </p>
+                                                    
+                                                    
+                                                </div>
+                                            
+                                                
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
-    
-            <section class="col">
-                <div class="sub-title">
-                    <h2>Programming skills</h2>
+
+            <!--About Section End-->
+
+            <!--Service Section Start-->
+
+            <section class="service section" id="service">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>Services</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <!--Services Item Start-->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-mobile-alt"></i>
+                                </div>
+                                <h4>Website Design (Customized Website Development)</h4>
+                                <!-- <p>Ayasha Akter Mow</p> -->
+                            </div>
+                        </div>
+                        <!--Services Item End-->
+                        <!--Services Item Start-->
+                       <div class="service-item padd-15">
+                            <a href="webDevelopemnt.html" 
+                            style="text-decoration: none; color: inherit;">
+                                <div class="service-item-inner">
+                                    <div class="icon">
+                                        <i class="fa fa-laptop-code"></i>
+                                    </div>
+                                    <h4>Web Development (
+                                        Full-Stack Development)</h4>
+                                    <!-- <p>Front-End Development, Back-End Development &
+                                         Full-Stack Development</p> -->
+                                </div>
+                            </a>
+                        </div>
+                        <!--Services Item End-->
+                        <!--Services Item Start-->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-palette"></i>
+                                </div>
+                                <h4>Software Development & Customization</h4>
+                                <!-- <p>Ayasha Akter Mow</p> -->
+                            </div>
+                        </div>
+                        <!--Services Item End-->
+                        <!--Services Item Start-->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-code"></i>
+                                </div>
+                                <h4>Translation & Localization Services</h4>
+                                <!-- <p>Ayasha Akter Mow</p> -->
+                            </div>
+                        </div>
+                        <!--Services Item End-->
+                        <!--Services Item Start-->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-search"></i>
+                                </div>
+                                <h4>Technical Consultation & Client Support</h4>
+                                <!-- <p>Ayasha Akter Mow</p> -->
+                            </div>
+                        </div>
+                        <!--Services Item End-->
+                        <!--Services Item Start-->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-bullhorn"></i>
+                                </div>
+                                <h4>Database Management & Optimization</h4>
+                                <!-- <p>Ayasha Akter Mow</p> -->
+                            </div>
+                        </div>
+                        <!--Services Item End-->
+                    </div>
                 </div>
-                <div class="sills-container">
-                    <div class="skill">
-                        <div class="subject">CSS</div>
-                        <div class="progress-bar" value="77%">
-                            <div class="progress-line" style="max-width: 77%;"></div>
-                        </div>
-                    </div>
-    
-                    <div class="skill">
-                        <div class="subject">C++</div>
-                        <div class="progress-bar" value="63%">
-                            <div class="progress-line" style="max-width: 63%;"></div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <div class="subject">Java</div>
-                        <div class="progress-bar" value="51%">
-                            <div class="progress-line" style="max-width: 51%;"></div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <div class="subject">Django</div>
-                        <div class="progress-bar" value="35%">
-                            <div class="progress-line" style="max-width: 35%;"></div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <div class="subject">Deep Learning</div>
-                        <div class="progress-bar" value="10%">
-                            <div class="progress-line" style="max-width: 10%;"></div>
-                        </div>
-                    </div>
-                </div>
+
             </section>
-    
-        </div>
+            <!--Service Section End-->
 
-     </section>
-     <section class="services" id="services">
-        <h2 class="heading">My<span>Services</span></h2>
-       
-        <div class="services-container">
-        <div class="services-box">
-            <i class="fa-solid fa-code"></i>
-            <h3>Web Development</h3>
-            <p>My fourth year project was related to websites. The super shop Management system implies the 
-                sturucture.
-            </p>
-            <button id="#">Read More</button>
-        </div>
+             <!--Portfolio Section Start-->
 
-        <div class="services-box">
-            <i class="fa-solid fa-palette"></i>
-            <h3>UI/UX Designing</h3>
-            <p>UI design focuses 
-                on the visual elements of a digital product, such as websites, mobile apps, or software interfaces.</p>
-                <button id="#">Read More</button>
-        </div>
+             <section class="portfolio section" id="portfolio">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>Portfolio</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="portfolio-heading padd-15">
+                            <h2>My Last Projects : </h2>
+                        </div>
+                    </div><br>
 
-        <div class="services-box">
-            <i class="fa-brands fa-android"></i>
-            <h3>App Development</h3>
-            <p>My project name was Coalesce. Coalesce means we all know that connecting 
-                everyone on one platform.
-            </p>
-            <button id="#">Read More</button>
+                    <div class="row">
+                        <!--Portfolio item Start-->
+                         <div class="portfolio-item padd-15">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <h3 style="text-align: center; color:rgb(245, 194, 12)"> For Jwellery Shop</h3>
+                                    <img src="images/portfolio/nabarupa.jpg" alt="">
+                                </div>
+                            </div>
+                         </div>
+                        <!--Portfolio item End-->
+
+                         <!--Portfolio item Start-->
+                         <div class="portfolio-item padd-15">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <h3 style="text-align: center; color:rgb(118, 133, 218)"> For AutoTech Shop</h3>
+                                    <img src="images/portfolio/semax.jpg" alt="">
+                                </div>
+                            </div>
+                         </div>
+                        <!--Portfolio item End-->
+                         <!--Portfolio item Start-->
+                         <div class="portfolio-item padd-15">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <h3 style="text-align: center; color:rgb(235, 127, 212)">
+                                         For Distributer</h3>
+                                    <img src="images/portfolio/ikra.jpg" alt="">
+                                </div>
+                            </div>
+                         </div>
+                        <!--Portfolio item End-->
+                         <!--Portfolio item Start-->
+                         <div class="portfolio-item padd-15">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <h3 style="text-align: center; color:rgb(245, 178, 22)">
+                                        For Digital Weight Shop</h3>
+                                    <img src="images/portfolio/metler.jpg" alt="">
+                                </div>
+                            </div>
+                         </div>
+                        <!--Portfolio item End-->
+                         <!--Portfolio item Start-->
+                         <div class="portfolio-item padd-15">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <h3 style="text-align: center; color:rgb(86, 84, 90)">
+                                        For Rod Cement Shop</h3>
+                                    <img src="images/portfolio/rudro.jpg" alt="">
+                                </div>
+                            </div>
+                         </div>
+                        <!--Portfolio item End-->
+                         <!--Portfolio item Start-->
+                         <div class="portfolio-item padd-15">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <h3 style="text-align: center; color:rgb(179, 27, 230)">
+                                        For Internet & Computer Accessories</h3>
+                                    <img src="images/portfolio/unitech.jpg" alt="">
+                                </div>
+                            </div>
+                         </div>
+                        <!--Portfolio item End-->
+                    </div>
+                </div>
+
+             </section>
+
+              <!--Portfolio Section End-->
+
+              <!--Contact Me Section Start-->
+             <section class="contact section" id="contact">
+                <div class="row">
+                    <div class="section-title padd-15">
+                        <h2>Contact Me</h2>
+                    </div>
+                </div>
+                <h3 class="contact-title">Have You Any Questions ?</h3>
+                <h4 class="contact-sub-title">I'M AT YOUR SERVICES</h4>
+                <div class="row">
+                    <!---Contact Info Item Start-->
+
+                    <div class="contact-info-item padd-15">
+                        <div class="icon">
+                            <i class="fa fa-phone"></i>
+                        </div>
+                        <h4>Call US On</h4>
+                        <p>+880 1535236956</p>
+                    </div>
+
+                    <!---Contact Info Item End-->
+
+                    <!---Contact Info Item Start-->
+
+                    <div class="contact-info-item padd-15">
+                        <div class="icon">
+                            <i class="fa fa-map-marker-alt"></i>
+                        </div>
+                        <h4>Home</h4>
+                        <p>Mirpur-1, Dhaka-1216</p>
+                    </div>
+
+                    <!---Contact Info Item End-->
+
+                    <!---Contact Info Item Start-->
+
+                    <div class="contact-info-item padd-15">
+                        <div class="icon">
+                            <i class="fa fa-envelope"></i>
+                        </div>
+                        <h4>Email</h4>
+                        <p>ayashaaktermow2268@gmail.com</p>
+                    </div>
+
+                    <!---Contact Info Item End-->
+
+                     <!---Contact Info Item Start-->
+
+                     <div class="contact-info-item padd-15">
+                        <div class="icon">
+                            <i class="fa fa-globe-europe"></i>
+                        </div>
+                        <h4>Website</h4>
+                        <p>www.domain.com</p>
+                    </div>
+
+                    <!---Contact Info Item End-->
+                </div>
+
+                <h3 class="contact-title padd-15">SEND ME AN EMAIL </h3>
+                <h4 class="contact-sub-title padd-15">I'M VERY RESPONSIVE TO MESSAGES</h4>
+
+                <!--Contact Form-->
+                <div class="row">
+                    <div class="contact-form padd-15">
+                        <div class="row">
+                            <div class="form-item col-6 padd-15">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Name">
+                                </div>
+                            </div>
+                            <div class="form-item col-6 padd-15">
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="Email">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-item col-12 padd-15">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Subject">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-item col-12 padd-15">
+                                <div class="form-group">
+                                    <textarea name="" class="form-control" id="" placeholder="Message"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-item col-12 padd-15">
+                                <button type="submit" class="btn">Send Message</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+               
+             </section>
+
+                <!--Contact Me Section End-->
+
+
+        </div>
+        <!--Main Content Ends-->
+    </div>
+    <!--Main Container Ends-->
+
+    <!--Style Switcher Start-->
+
+    <div class="style-switcher">
+        <div class="style-switcher-toggler s-icon">
+            <i class="fas fa-cog fa-spin">
+            </i>
+        </div>
+        <div class="day-night s-icon">
+        <i class="fas fa-moon"></i>
+        </div>
+        <h4>Theme Colors</h4>
+        <div class="colors">
+            <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+            <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+            <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+            <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+            <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+            
+
+            
         </div>
     </div>
-     </section>
-     <!--Contact Me Section Design-->
-    
-        <section class="contactme" id="contactme">
-            <h2 class="heading">Contact<span>Me</span></h2>
-            <form id="contact-form">
-                <div class="form-group">
-                  <label for="name">Name:</label>
-                  <input type="text" id="name" name="name" required>
-                </div>
-                <div class="form-group">
-                  <label for="email">Email:</label>
-                  <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                  <label for="message">Message:</label>
-                  <textarea id="message" name="message" required></textarea>
-                </div>
-                <button type="submit">Send Message</button>
-              </form>
-              <div id="success-message" class="hidden">Message sent successfully!</div>
-            
-         </section>
-     
-     
+     <!--Style Switcher End-->
 
-
-
-     <script src="DownloadCv.js"></script>
-     <script src="HiddenContent.js"></script>
-     <script src="contactme.js"></script>
-     
-
-
-
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js" integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ==" 
+     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/script.js"></script>
+    <script src="js/style-switcher.js"></script>
 </body>
 </html>
-    
